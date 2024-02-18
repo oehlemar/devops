@@ -20,7 +20,7 @@ Mit DevOps sollen die Qualität der Software, die Geschwindigkeit der Entwicklun
 6. Automatisierung
 
 # 6C
-Continuous Business Planning
+Continuous Business Planning /n
 Collaborative Development
 Continuous Testing
 Continuous Release and Deployment
