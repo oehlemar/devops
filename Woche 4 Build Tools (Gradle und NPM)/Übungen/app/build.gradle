@@ -18,7 +18,8 @@ repositories {
 dependencies {
     // added by oema (build.gradle) ascii render
     implementation 'com.indvd00m.ascii.render:ascii-render:2.2.0'
-    
+    // add jansi by oema
+    implementation 'org.fusesource.jansi:jansi:2.4.1'
     // Use JUnit Jupiter for testing.
     testImplementation libs.junit.jupiter
 
@@ -26,7 +27,6 @@ dependencies {
 
     // This dependency is used by the application.
     implementation libs.guava
-
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

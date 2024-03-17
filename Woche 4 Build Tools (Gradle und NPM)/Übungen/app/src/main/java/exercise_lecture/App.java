@@ -8,6 +8,11 @@ import com.indvd00m.ascii.render.api.ICanvas;
 import com.indvd00m.ascii.render.api.IContextBuilder;
 import com.indvd00m.ascii.render.api.IRender;
 import com.indvd00m.ascii.render.elements.PseudoText;
+import org.fusesource.jansi.AnsiConsole;
+import static org.fusesource.jansi.Ansi.*;
+import static org.fusesource.jansi.Ansi.Color.*;
+
+
 
 public class App {
     public String getGreeting() {
@@ -22,5 +27,8 @@ public class App {
 		ICanvas canvas = render.render(builder.build());
 		String s = canvas.getText();
         System.out.println(s);
+
+        AnsiConsole.systemInstall();
+        System.out.println( ansi().eraseScreen().render("@|red Hello|@ @|green World|@") );
     }
 }
